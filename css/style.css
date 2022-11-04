@@ -72,6 +72,7 @@ nav.mobile-menu{
 	height: 40px;
 	cursor: pointer;
 	
+	
 }
 nav.mobile-menu ul{
 	position: absolute;
@@ -81,6 +82,7 @@ nav.mobile-menu ul{
 	background-color: white;
 	text-align: center;
 	list-style-type: none;
+	
 	
 }
 nav.mobile-menu ul li {
@@ -204,8 +206,9 @@ nav.mobile-menu ul li a{
 	
 	
 }
+/* botoes */
 .img-center  .btn, .slider-bullets .btn{
-	background: rgb(51, 51, 51);
+	background: rgb(95, 95, 95);
 	width: 15px;
 	height: 15px;
 	margin: 10px;
@@ -213,63 +216,85 @@ nav.mobile-menu ul li a{
 	border-radius:100% ;
 	cursor: pointer;
 }
-.img-center .btn-acionado, .sobre-mim .btn-acionado{
+.img-center .btn-acionado, .sobre-equipe .btn-acionado{
 	width: 16px;
 	height: 16px;
 	background-color: black;
 
 }
 /* fim da img center */
-
-.descricao-time{
-	background-color: rgb(82, 47, 103);
-	width: 50%;
-	text-align: left;
-	padding-top: 100px;
-	padding-left: 20px;
+.sobre-container{
+	width: 100%;
 	display: flex;
-	flex-direction: row-reverse;
 	
 }
-/* fim da sessão de descriçao do time */
-.sobre-mim{
-	background-color: white;
-	width: 50%;
-	margin: 0 auto;
+.part1{
+	background-color: rgb(82, 47, 103);
+	width: 100%;
 	text-align: left;
-	padding-top: 100px;
-	padding-left: 20px;
-	
-}
-.sobre-mim-wraper{
-	max-width: 70%;
-	margin: 30px;
-	
-}
-.sobre-mim-wraper  p{
-	color: black;
-	
-}
-.sobre-mim-wraper h2  img{
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	font-size: 40pt;
-}
-.sobre-mim-wraper h2{
-	font-size: 36px;
+	padding:10% 5%;
 }
 .descricao-time-wraper{
-	width: 70%;
+	width: 100%;
 	color: white;
 	font-size: 36px;
-	margin: 30px;
+	
 }
 .descricao{
 	display: flex;
-	z-index: 99;
+	width: 100%;
+	height: 100%;
 	
 }
+
+
+
+/* fim da sessão de descriçao do time */
+.part2{
+	background-color: rgb(245, 0, 0);
+	width:100%;
+	padding-left: 20px;
+	text-align: left;
+	
+	padding:10% 5% ;
+	
+}
+.sobre-autor{
+	width: 100%;
+	height: 100%;
+}
+.scroll-equipe{
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+}
+.scroll-wraper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+.sobre-equipe-wraper  p{
+	color: black;
+	
+	
+}
+.sobre-equipe-wraper h2  img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	
+}
+.sobre-equipe-wraper h2{
+	font-size: 36px;
+	width: 100%;
+	
+}
+
 /* fim da sessão 2 */
 .sessao3{
 	background-color: rgb(71, 38, 99);
@@ -368,7 +393,7 @@ footer > .container{
 	}
 	
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:878px){
 
 	section.header-1 {
 		justify-content: right;
@@ -379,7 +404,7 @@ footer > .container{
 	.header-2 .chamada1{
 	width: 100%;
 	text-align: center;
-	margin:300px 2%;
+	
 	}
 	header{
 		height: auto;
@@ -420,25 +445,11 @@ footer > .container{
 		display: none;
 	}
 	/* sessão 2 abaixo */
-	.descricao{
+	
+	.sobre-container{
 		flex-direction: column;
 	}
-	.descricao-time{
-		text-align: center;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.sobre-mim{
-		padding-top: 20px;
-		text-align: center;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	}
+	
 	.slider-bullets{
 	display: inline-block;
 	margin: 0 auto;
